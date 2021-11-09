@@ -1,0 +1,40 @@
+/*Francisco Domínguez Díaz. 1ºDamba*/
+#Contenedor, #Navegador, #PiePagina, #contenidos, body {
+    margin: 0;
+    padding: 0;
+}
+#Contenedor {
+    background-color: #d8af7b;
+}
+#Navegador {
+    background-color: #f9e9d2;
+}
+#PiePagina {
+	background-color: #6491e9;
+}
+#contenidos {
+    background-color: #549395;
+}
+#elmapawey {
+	background-color: #aa4e17;
+}
+.multimedias {
+    background-color: #ed8d66;
+	width: 100%;
+	height: auto;
+}
+.multimedias img, video, iframe {
+	width: 25%;
+	height: auto;
+}
+.pereza {
+	width: 35%;
+	height: auto;
+}
+table {
+	width: 100%;
+	height: auto;
+}
+td {
+	border: 1px solid gray;
+}

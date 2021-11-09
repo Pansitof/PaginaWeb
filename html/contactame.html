@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--Francisco Domínguez Díaz. 1ºDamba-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <title>Contactame</title>
+    <link  rel="icon"   href="../imagenes/favicon-96x96.png" type="image/png" />
+</head>
+<body>
+    <div id="Contenedor"><br>
+        <div id="Navegador">
+            <ul>
+                <li><a href="../Index.html">Tim Berners-Lee</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contactame.html">Contactame</a></li>
+            </ul>
+            <img src="../imagenes/imagen-menu.png" usemap="#imagenNavegador">
+            <map name="imagenNavegador">
+                <area shape="rect" coords="15,45,108,131" href="../Index.html">
+                <area shape="circle" coords="170,90,45" href="portfolio.html">
+                <area shape="poly" coords="230,135,288,43,344,135" href="precios.html">
+                <area shape="rect" coords="351,32,440,141" href="contactame.html">
+            </map>
+        </div>
+        <div id="contenidos">
+		<h1>Contactame</h1>
+		<h2>Formulario de Contacto</h2>
+		<form method="post" enctype="multipart/form-data" action="contactar.php">
+			<fieldset><legend>Datos Personales</legend>
+				<label for="nombre">Nombre:</label><input id="nombre" name="nombre" type="text" value="" placeholder="Introduce tu nombre..." required>*<br>
+				<label for="apellido">Apellidos:</label><input id="apellido" name="apellido" type="text" value="" placeholder="Introduce tu apellido..." required>*<br>
+				<label for="email">Email:</label><input id="email" name="email" type="email" value="" required>*<br>
+				<label for="fecha">Fecha de Nacimiento:</label><input type="date" id="fecha" name="fecha"><br>
+				<label for="edad">Edad:</label><input id="edad" name="edad" type="number" min="10" max="100"><br>
+				<label for="sexo">Sexo:</label><input type="radio" name="sexo" value="hombre" checked> Hombre <input type="radio" name="sexo" value="mujer"> Mujer <br>
+				<label for="pais">País:</label>
+				<select id="pais" name="pais">
+					<option value="" selected>- selecciona -</option>
+					<option value="espania">Francia</option>
+					<option value="portugal">Portugal</option>
+					<option value="italia">Italia</option>
+				</select>
+			</fieldset>
+			<fieldset><legend>Otros Datos</legend>
+				<label for="mensaje">Mensaje:</label><textarea id="mensaje" name="mensaje" value="" cols="40" rows="5" placeholder="Introduce tu mensaje..."></textarea><br>
+				<label for="archivo">Adjunta una foto...</label><input type="file" id="archivo" name="archivo" value="">
+			</fieldset>
+			<input id="condiciones" type="checkbox" checked>He leído las condiciones...<br>
+			<input type="reset" name="limpiar" value="Limpiar">
+			<input type="submit" name="buscar" value="Enviar">
+			</form>
+		</div>
+		<div id="elmapawey">
+		<h1>Centro de referencia</h1>
+			<iframe class="pereza" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.779733641413!2d-16.28545688492136!3d28.45605558248781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1636220844560!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div><br>
+		<div id="PiePagina">&copy; 2040 <a href="../Index.html">www.MiSitio.com</a></div><br>
+    </div>
+</body>
+</html>
